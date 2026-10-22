@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Department of Mathematics | Sri Venkateswara College</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Top banner -->
+  <header id="home">
+    <img class="logo" src="images/logo.svg" alt="Department logo">
+    <div>
+      <h1>Department of Mathematics</h1>
+      <p class="college">Sri Venkateswara College, University of Delhi</p>
+    </div>
+  </header>
+
+  <!-- Navigation bar with drop-down menus -->
+  <nav id="navbar">
+    <!-- Checkbox + label act as the menu toggle on small screens (pure CSS) -->
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776; Menu</label>
+
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Department</a></li>
+
+      <li class="dropdown">
+        <a href="#faculty">Faculty &#9662;</a>
+        <ul class="dropdown-content">
+          <li><a href="#faculty-members">Faculty &amp; Staff</a></li>
+          <li><a href="#teaching-areas">Teaching Areas</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="#courses">Courses &#9662;</a>
+        <ul class="dropdown-content">
+          <li><a href="#ug">B.Sc. (Hons.) Mathematics</a></li>
+          <li><a href="#programme">B.A. / B.Sc. Programme</a></li>
+          <li><a href="#ge">Generic Electives &amp; SEC</a></li>
+          <li><a href="#syllabus">Core Papers</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="#activities">Activities &#9662;</a>
+        <ul class="dropdown-content">
+          <li><a href="#society">Trisectrix Society</a></li>
+          <li><a href="#seminars">Seminars</a></li>
+          <li><a href="#workshops">Workshops</a></li>
+          <li><a href="#events">Events</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero / Introduction -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Welcome to the Department of Mathematics</h2>
+      <p>
+        The Department of Mathematics at Sri Venkateswara College is dedicated to developing logical
+        thinking, analytical ability and a deep understanding of mathematical ideas. Through classroom
+        teaching, tutorials, seminars and student-led activities, the department prepares students for
+        higher studies, research and careers in a wide range of fields.
+      </p>
+      <a class="btn" href="#courses">Explore Courses</a>
+    </div>
+    <img src="images/campus.svg" alt="Illustration of the college campus">
+  </section>
+
+  <main>
+
+    <!-- About Department -->
+    <section id="about" class="section">
+      <h2 class="section-title">About the Department</h2>
+      <div class="about-grid">
+        <div>
+          <p>
+            Sri Venkateswara College is a constituent college of the University of Delhi. The Department of
+            Mathematics offers undergraduate courses under the University's Undergraduate Curriculum
+            Framework and teaches Mathematics to students of many other disciplines through programme
+            courses and generic electives.
+          </p>
+          <h3>Our Vision</h3>
+          <p>To nurture curiosity, rigour and creativity in mathematics, and to develop confident students
+            who can apply mathematical thinking to real-world problems.</p>
+          <h3>Our Mission</h3>
+          <ul>
+            <li>Provide strong foundations in pure and applied mathematics.</li>
+            <li>Encourage problem solving, reasoning and independent thinking.</li>
+            <li>Promote the use of computational tools in mathematics.</li>
+            <li>Support students in higher studies, research and careers.</li>
+          </ul>
+        </div>
+        <div class="highlights">
+          <div class="stat"><span class="num">&Sigma;</span><span>Pure Mathematics</span></div>
+          <div class="stat"><span class="num">&int;</span><span>Applied Mathematics</span></div>
+          <div class="stat"><span class="num">&pi;</span><span>Trisectrix Society</span></div>
+          <div class="stat"><span class="num">&infin;</span><span>Seminars &amp; Events</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Faculty -->
+    <section id="faculty" class="section">
+      <h2 class="section-title">Faculty</h2>
+
+      <div id="faculty-members" class="hod-card">
+        <img src="images/faculty.svg" alt="Faculty member">
+        <div>
+          <h3>Dr. Rafiq</h3>
+          <p class="name">Faculty, Department of Mathematics</p>
+          <p>Sri Venkateswara College, University of Delhi</p>
+        </div>
+      </div>
+
+      <h3 id="teaching-areas">Teaching Areas</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Area</th>
+            <th>Topics Covered</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Analysis</td>
+            <td>Real Analysis, Calculus, Riemann Integration, Metric Spaces</td>
+          </tr>
+          <tr>
+            <td>Algebra</td>
+            <td>Linear Algebra, Group Theory, Ring Theory</td>
+          </tr>
+          <tr>
+            <td>Differential Equations</td>
+            <td>Ordinary and Partial Differential Equations</td>
+          </tr>
+          <tr>
+            <td>Applied Mathematics</td>
+            <td>Probability &amp; Statistics, Discrete Mathematics, Numerical Methods</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Courses -->
+    <section id="courses" class="section">
+      <h2 class="section-title">Courses Offered</h2>
+      <div class="cards">
+        <div id="ug" class="card">
+          <h3>B.Sc. (Hons.) Mathematics</h3>
+          <p>A four-year undergraduate programme covering analysis, algebra, differential equations,
+            probability, numerical methods and many electives.</p>
+          <p class="meta">Duration: 4 Years &middot; Semesters: 8</p>
+        </div>
+        <div id="programme" class="card">
+          <h3>B.A. / B.Sc. Programme</h3>
+          <p>Mathematics taught as a discipline in programme courses, building strong fundamentals in
+            calculus, algebra and their applications.</p>
+          <p class="meta">Duration: 3/4 Years</p>
+        </div>
+        <div id="ge" class="card">
+          <h3>Generic Electives &amp; SEC</h3>
+          <p>Mathematics papers offered to students of other departments, along with practical
+            Skill Enhancement Courses.</p>
+          <p class="meta">Open to all disciplines</p>
+        </div>
+      </div>
+
+      <h3 id="syllabus">Core Papers (B.Sc. Hons. Mathematics)</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Semester</th>
+            <th>Discipline Specific Core Papers</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>I</td>
+            <td>Algebra, Elementary Real Analysis, Probability and Statistics</td>
+          </tr>
+          <tr>
+            <td>II</td>
+            <td>Linear Algebra, Calculus, Ordinary Differential Equations</td>
+          </tr>
+          <tr>
+            <td>III</td>
+            <td>Theory of Real Functions, Group Theory, Discrete Mathematics</td>
+          </tr>
+          <tr>
+            <td>IV</td>
+            <td>Partial Differential Equations, Riemann Integration, Ring Theory</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Activities -->
+    <section id="activities" class="section">
+      <h2 class="section-title">Academic Activities</h2>
+
+      <div class="activity" id="society">
+        <img src="images/event.svg" alt="Society illustration">
+        <div>
+          <h3>Trisectrix &ndash; The Mathematics Society</h3>
+          <p>Trisectrix is the student society of the department. It organises talks, quizzes,
+            competitions and other activities that make mathematics fun and engaging for everyone.</p>
+        </div>
+      </div>
+
+      <div class="activity" id="seminars">
+        <img src="images/seminar.svg" alt="Seminar illustration">
+        <div>
+          <h3>Seminars</h3>
+          <p>The department invites speakers from academia and industry to deliver talks on topics such as:</p>
+          <ul>
+            <li>Careers in Mathematics and Data Science</li>
+            <li>Mathematics in Cryptography</li>
+            <li>Famous Unsolved Problems in Mathematics</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="activity" id="workshops">
+        <img src="images/workshop.svg" alt="Workshop illustration">
+        <div>
+          <h3>Workshops</h3>
+          <p>Hands-on workshops help students learn tools that support mathematical work, such as:</p>
+          <ul>
+            <li>LaTeX for Mathematical Writing</li>
+            <li>Python for Mathematics</li>
+            <li>Mathematical Software (SageMath / GeoGebra)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="activity" id="events">
+        <img src="images/event.svg" alt="Event illustration">
+        <div>
+          <h3>Events</h3>
+          <p>Events organised by the department and its society include:</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Event</th>
+                <th>Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Annual Departmental Fest</td>
+                <td>Fest</td>
+              </tr>
+              <tr>
+                <td>Maths Quiz</td>
+                <td>Quiz</td>
+              </tr>
+              <tr>
+                <td>Problem Solving Contest</td>
+                <td>Competition</td>
+              </tr>
+              <tr>
+                <td>National Mathematics Day (22 December)</td>
+                <td>Celebration</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="contact-grid">
+        <div class="contact-box">
+          <h3>Address</h3>
+          <p>Department of Mathematics<br>
+            Sri Venkateswara College<br>
+            Benito Juarez Road, Dhaula Kuan<br>
+            New Delhi &ndash; 110021</p>
+        </div>
+        <div class="contact-box">
+          <h3>Get in Touch</h3>
+          <p>College Phone: <a href="tel:+911124112196">011 2411 2196</a></p>
+        </div>
+        <div class="contact-box">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="https://www.svc.ac.in" target="_blank">College Website</a></li>
+            <li><a href="https://www.du.ac.in" target="_blank">University of Delhi</a></li>
+            <li><a href="#home">Back to Top</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Department of Mathematics, Sri Venkateswara College, University of Delhi</p>
+  </footer>
+
+</body>
+
+</html>
